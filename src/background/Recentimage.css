@@ -1,0 +1,34 @@
+.background_image1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+.share{
+    
+   margin-left: 70%;
+}
+.finalreviews{
+    margin: 80px;
+    background-color: white;
+    border: none;
+}
+.feedback{
+    color: black;
+    margin:20px;
+    margin-bottom: 10px;
+}
+.reviews{
+    margin-top: 50px;
+}
+.collapse{
+    box-decoration-break: unset;
+    border-block: block;
+}

@@ -1,0 +1,24 @@
+.total{
+    margin-top: 1px;
+}
+.subtotal{
+    margin-top: 20px;
+
+}
+.total_amount{
+    float: left;
+  
+}
+.totalform{
+    
+    margin-left: 20px;
+    margin: 20px;
+}
+.address{
+    color: black;
+}
+.totalcheckout{
+    color: black;
+    border-width: 0.0001px;
+    background-color: rgb(255, 246, 246);
+}

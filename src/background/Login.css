@@ -1,0 +1,23 @@
+.logintitle{
+ 
+    text-align: center;
+    margin-top: 10%;
+    color:rgb(194, 183, 31);
+}
+.form{
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 34%;
+    margin-top: 20px;
+}
+.glefb{
+    border-width: 0.01px;
+    background-color: beige;
+    margin: 5px;
+}
+.forgetpsw{
+    margin:30px;
+    color: black;
+
+}

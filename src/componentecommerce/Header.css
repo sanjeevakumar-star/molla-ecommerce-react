@@ -1,0 +1,126 @@
+.container{
+    max-width: 1200px;
+  
+   
+}
+.dropdown-toggle{
+  
+    margin:10px; 
+    font-size: 13px;
+    color: lightslategrey;
+    justify-content: center;
+}
+
+
+.call{
+    margin-right: flex;
+    margin-left: 5px;
+    /* margin-left: 450px; */
+    
+    font-size: 14px;
+    color: lightslategrey;
+  text-align: center;
+  justify-content: center;
+ 
+}
+.contact{
+   margin-left: 5px;
+    font-size: 14px;
+    color: lightslategrey;
+    text-align: center;
+    
+}
+.mywish{
+    margin-left: 5px;
+    font-size: 14px;
+    color: lightslategrey;
+    text-align: center;
+    
+}
+.about{
+    margin-left: 5px;
+    font-size: 14px;
+    color: lightslategrey;
+    text-align: center;
+   
+}
+.login{
+    margin-left: 5px;
+    font-size: 14px;
+    color: lightslategrey;
+    margin-right: 0;
+    text-align: center;
+   
+
+   
+}
+
+ 
+.logo{
+    width: 110px; 
+    margin:20px;
+    margin-left: 0;
+    display: flex; 
+}
+.shops{
+    margin-left: 0;
+    margin:15px; 
+    font-size: 14px;
+    color:rgb(204, 190, 63);
+   
+}
+.shop{
+    margin:15px; 
+    font-size: 14px;
+    color: lightslategrey;
+}
+.searchicon{
+ 
+   margin-right: 50px;
+    color: rgb(133, 133, 60);
+    width: 15px;
+    margin-bottom: 50px;
+    align-items: center;
+    margin:25px; 
+}
+.search{
+    border-radius: 360px;
+    background-color: rgba(251, 252, 250, 0);
+    border-color: rgb(251, 252, 250 ,0);
+    border-width: 0.1px;
+  margin-left: 600px;
+    margin:25px; 
+    height: 25px;
+    width: 80%;
+    text-align:center;
+   
+}
+
+.cart{
+   
+    border-width: 0.1px;
+    border-color: rgb(204, 190, 63);
+    border-bottom: rgb(204, 190, 63);
+    color: white;
+    width:29px;
+    height: 25px;
+    background:var(--maincolor);
+    background-color: rgb(236, 173, 56);
+
+    /* background-color:rgb(14, 14, 11); */
+    color:var(--whitecolor);
+    border-radius:50%;
+    line-height:10px;
+    text-align:center;
+    font-size:12px;
+   
+    justify-content: end;
+   
+}
+.cartimg{
+   
+width: 20px;
+height: 60px;
+
+
+}

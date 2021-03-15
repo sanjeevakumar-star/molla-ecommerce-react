@@ -1,0 +1,22 @@
+
+[  
+
+    {
+        "id":"7",
+        "title":"Large suspension LAMP",
+        "price":"111.00",
+        
+        "image":"https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-5-2.jpg",
+        "catagory":"Decoration"
+    },
+    {
+        "id":"6",
+        "title":"Petite Table Lamp",
+        "price":"309.00",
+        
+        "image":"https://d-themes.com/react/molla/demo-2/assets/images/products/shop/product-12-2.jpg" ,
+        "catagory":"lighting"
+    
+    }
+
+]

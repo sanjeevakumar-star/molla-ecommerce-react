@@ -1,0 +1,44 @@
+.hello{
+    margin-top: 100px;
+    border-style: hidden;
+}
+.addimg{
+   align-items: center;
+   border-style: hidden;
+   overflow: hidden;
+   margin: 30px;
+  
+   
+}
+.title1{
+
+   margin-top: 80px;
+    text-align: center;
+    overflow: hidden;
+
+}
+.list{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+    overflow: hidden;
+}
+.lists{
+    margin: 15px;
+    color: rgb(231, 148, 46);
+    overflow: hidden;
+  
+}
+.list1{
+    margin: 15px;
+    color: rgb(20, 20, 19);
+    overflow: hidden;
+}
+
+.newlinks{
+    justify-content: center;
+   margin: 25px; 
+   overflow: hidden;
+   
+}

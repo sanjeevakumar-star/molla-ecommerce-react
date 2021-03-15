@@ -1,0 +1,37 @@
+.productcartdetails{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.productcart_imagepro{
+    object-fit: contain;
+    width: 160px;
+    height: 160;
+}
+.remove_button{
+    background-color: #f0c14b;
+    border: 1p solid;
+    margin-top: 10px;
+    border-color: black;
+    height: 25px;
+    width:150px;
+    border-width: 0.0001px;
+   
+}
+.productcartinfo{
+    padding-left: 20px;
+}
+.productcart_title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.increase{
+    background-color: #f0c14b;
+    width: 70px;
+   
+}
+.decrease{
+    background-color: #f0c14b;
+    width: 70px;
+ 
+}

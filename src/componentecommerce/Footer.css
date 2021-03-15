@@ -1,0 +1,73 @@
+ .footerarea{
+    background-color: rgb(42, 42, 42);
+    /* height: 420px; */
+   
+} 
+.footer{
+   background-color: rgb(90, 56, 56);  
+ 
+  background-repeat: no-repeat;
+ display: flex;
+  width: 100%;
+    margin-top: 50px;
+  
+    height: 200px;
+   }
+   .footerimg{
+       width: 100px;
+        height: 50px; 
+       margin-top: 40px;
+   }
+
+
+.footermollapara{
+    color:rgb(138, 133, 133);
+    margin: 10px;
+    margin-top: 40px;
+   }
+.color{
+    color: rgb(236, 222, 222);
+   margin-top: 20px;
+    text-align: center;
+}
+.signup{
+    background-color:unset ;
+   
+    border-width: 0.001px;
+    color: aliceblue;
+    width: 200px;
+    height: 40px;
+   
+ 
+}
+.footerfooter{
+    background-color:rgba(24, 21, 18, 0.904) ;
+    color:black;
+    margin-top: 0px;
+    height: 500px;
+}
+.footerlist{
+    color:rgb(138, 133, 133);
+   
+    list-style: none;
+    margin: 15px;
+    text-align: left;
+   
+}
+.footername{
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 80px;
+    color: aliceblue;
+}
+.footerhr{
+    color:rgb(243, 238, 238);
+    background-color: white; 
+    margin-bottom: 10px;
+     
+}
+.footerfac{
+    width: 50px;
+    height: 30px;
+    color: aliceblue;
+}

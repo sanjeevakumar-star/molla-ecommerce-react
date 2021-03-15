@@ -1,0 +1,20 @@
+.Data{
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+  display: flex;
+ 
+  width: 100%;
+}
+.card{
+    min-width: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    justify-content: left;
+}
+.card img{
+    max-width: 200px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+}
