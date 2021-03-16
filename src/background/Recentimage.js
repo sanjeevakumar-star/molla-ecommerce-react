@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 import pro from "../background/pro.json";
 
-function Recentimage1(props, { image, title, price, id, match }) {
+function Recentimage1(props, { image, title, price, id, amount, quantity }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -34,6 +34,8 @@ function Recentimage1(props, { image, title, price, id, match }) {
         title: title,
         price: price,
         image: image,
+        amount:amount,
+        quantity:quantity
       },
     });
   };
@@ -110,7 +112,6 @@ function Recentimage1(props, { image, title, price, id, match }) {
                   </Dropdown>
                 </p>
                 <hr />
-  
               </div>
               <div>
                 <button className="addbutton" onClick={addToBasket}>

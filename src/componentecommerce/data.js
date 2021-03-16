@@ -11,8 +11,8 @@ function Data() {
   return (
     <div>
       <Center />
-      <Images />
-      <Trendproduct />
+      {/* <Images /> */}
+      {/* <Trendproduct /> */}
       <Shopcategories />
       <Recentarrivalproducts />
       <Payment />

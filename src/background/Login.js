@@ -6,9 +6,13 @@ import { ImGoogle2 } from "react-icons/im";
 const Login = () => {
   return (
     <div className="container">
+        <div className="row">
+        <div className="col-lg-6">
+      <div className="loginback">
       <h1 className="logintitle">Login</h1>
-      <div className="row">
-        <div className="col-lg-12">
+      </div>
+    
+      
           <form className="form" action="">
             <div className="form-group">
               <label for="email">Email address:</label>
@@ -46,6 +50,12 @@ const Login = () => {
             </div>
           </form>
         </div>
+     
+      <div className="col-md-6">
+
+
+
+      </div>
       </div>
     </div>
   );

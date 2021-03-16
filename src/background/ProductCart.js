@@ -1,7 +1,7 @@
 import React from "react";
 import ProductCartcss from "./ProductCart.css";
 import { useStateValue } from "../background/StateProvider";
-import Data from "../componentecommerce/data";
+// import Data from "../componentecommerce/data";
 
 function ProductCarts({ image, title, price, id, quantity, amount }) {
   const [{ basket }, dispatch] = useStateValue(0);

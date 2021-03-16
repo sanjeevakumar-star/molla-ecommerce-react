@@ -124,24 +124,24 @@ function Images() {
               <a className="lists" href="/">
                 All
               </a>
-              <Link to="/furniture">
+              {/* <Link to="/furniture"> */}
                 {" "}
                 <a className="list1" href="/">
                   {" "}
                   FURNITUE
                 </a>{" "}
-              </Link>
-              <Link to="/decoration">
+              {/* </Link> */}
+              {/* <Link to="/decoration"> */}
                 <a className="list1" href="/">
                   DECARATION
                 </a>
-              </Link>
-              <Link to="/lighting">
+              {/* </Link> */}
+              {/* <Link to="/lighting"> */}
                 {" "}
                 <a className="list1" href="/">
                   LIGHTING
                 </a>
-              </Link>
+              {/* </Link> */}
             </div>
           </div>
         </div>

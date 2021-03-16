@@ -6,7 +6,7 @@ import Total from "../background/Total";
 import ProductCart from "../background/ProductCart";
 // import Pro from "../background/pro";
 
-function Checkout({ id, image, title, price, amount }) {
+function Checkout({ id, image, title,   quantity, amount }) {
   const [{ basket }] = useStateValue();
 
   return (

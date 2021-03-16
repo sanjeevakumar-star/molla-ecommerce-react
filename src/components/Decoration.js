@@ -1,54 +1,51 @@
-import React, { useState } from 'react'
-import { render } from 'react-dom';
-import {GrCart} from 'react-icons/gr';
+import React, { useState } from "react";
+import { render } from "react-dom";
+import { GrCart } from "react-icons/gr";
 
-import {Link} from "react-router-dom";
-import { useStateValue } from '../background/StateProvider';
+import { Link } from "react-router-dom";
+import { useStateValue } from "../background/StateProvider";
 
-
- 
-  function Decoration({image,title,price,id,quantity}){
-
-
-
-  const [{basket} ,dispatch]=useStateValue()
-    const addToBasket= () => {
-      dispatch({
-      type:'ADD_TO_BASKET',
-      item:{
-        id:id,
+function Decoration({ image, title, price, id, quantity, amount }) {
+  const [{ basket }, dispatch] = useStateValue();
+  const addToBasket = () => {
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
         title: title,
         image: image,
         price: price,
-        quantity:quantity
-      }
-    })
- 
- 
-  }
+        quantity: quantity,
+        amount: amount,
+      },
+    });
+  };
 
-
-
-   return(<div className="container" >
-   <div>
-    
-<div className="product" key={id}>
- <a  href=""><Link to={`/system/${id}`}><img  className="imagepro" src={image}  key={id} alt=""/></Link></a> 
-<div className="productinfo">
-
-  <a className="titlelink" href=""><p >{title}</p></a>
-  <a className="productprice">  <p className="productprice">
-      <small>$</small>
-      <strong className="recentimg1">{price}</strong>
-      </p> </a> 
-    
-   
- 
-</div>
-  <button className="addbutton" onClick={addToBasket}  >ADD TO CART <GrCart className="productcart"/></button>
-</div>
-</div>
-</div> );
+  return (
+    <div className="container">
+      <div>
+        <div className="product" key={id}>
+          <Link to={`/system/${id}`}>
+            <img className="imagepro" src={image} key={id} alt="" />
+          </Link>
+          <div className="productinfo">
+            <a className="titlelink" href="/">
+              <p>{title}</p>
+            </a>
+            <a className="productprice" href="/">
+              {" "}
+              <p className="productprice">
+                <small>$</small>
+                <strong className="recentimg1">{price}</strong>
+              </p>{" "}
+            </a>
+          </div>
+          <button className="addbutton" onClick={addToBasket}>
+            ADD TO CART <GrCart className="productcart" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }
-export default Decoration;   
- 
+export default Decoration;

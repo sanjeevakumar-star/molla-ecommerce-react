@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 toast.configure();
-function Recent({ image, title, price, id ,quantity,amount}) {
+function Recent({ image, title, price, id, quantity, amount }) {
   const notify = () => {
     toast("Item added");
   };
@@ -24,8 +24,8 @@ function Recent({ image, title, price, id ,quantity,amount}) {
         title: title,
         image: image,
         price: price,
-        quantity:quantity,
-        amount:amount
+        quantity: quantity,
+        amount: amount,
       },
     });
 
@@ -43,26 +43,25 @@ function Recent({ image, title, price, id ,quantity,amount}) {
               </Link>
               <div className="productinfo">
                 <p className="producttype">Furnitures</p>
-                <Link to={`/system/${id}`}>
-                  <a className="titlelink" href="/">
-                    <p>{title} </p>
-                  </a>
-                </Link>
-              
+                {/* <Link to={`/system/${id}`}> */}
+                <a className="titlelink" href="/">
+                  <p>{title} </p>
+                </a>
+                {/* </Link> */}
+
                 <p className="productprice">
                   <small>$</small>
                   <strong>{price}</strong>
                 </p>
               </div>
-             
+
               <button
                 className="addbutton"
                 onClick={addToBasket}
                 onClickCapture={notify}
               >
-              
                 ADD TO CART <GrCart className="productcart" />
-              </button>  
+              </button>
             </div>
           </div>
         </div>

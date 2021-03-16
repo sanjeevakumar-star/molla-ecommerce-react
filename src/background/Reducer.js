@@ -1,6 +1,5 @@
 export const initialState = {
   basket: [],
- 
 };
 
 const reducer = (state, action) => {
@@ -25,9 +24,9 @@ const reducer = (state, action) => {
       // console.log("before", prodItem.quantity);
       prodItem.quantity = item.quantity + 1;
 
-      prodItem.amount = prodItem.quantity * item.amount ;
-      
-      console.log("after", prodItem.amount);
+      prodItem.amount = prodItem.quantity * item.price;
+
+      // console.log("afterksdjbfkjds", prodItem.amount);
 
       const newState = oldBasket.filter((i) => i.id !== item.id);
 
@@ -42,25 +41,6 @@ const reducer = (state, action) => {
       );
 
       return { basket: newBasket };
-
-    //  case "DECREASE":
-    //  state.basket[state.basket.findIndex(item => item.id === action.item.id)].quantity--
-    // // let indexdata=state.basket.findIndex(item => item.id === action.item.id)
-    // // let identifydata=state.basket[indexdata]
-
-    // state.basket[state.basket.findIndex(item => item.id === action.item.id)].quantity=-1
-
-    // let data2 = data.quantity + 1
-
-    // console.log("fdsfsd",state.basket[state.basket.findIndex(item => item.id === action.item.id)])
-    // // console.log(indexdata)
-    // // console.log(identifydata,"1")
-
-    //  return {
-    //      ...state,
-
-    //      basket: [state.basket]
-    //  }
 
     case "DECREASE":
       const decitem = action.item;
@@ -79,9 +59,9 @@ const reducer = (state, action) => {
 
       const decprodItem = decprod[0];
 
-      console.log("before decrease", decprodItem.quantity);
       decprodItem.quantity = decitem.quantity <= 0 ? 0 : decitem.quantity - 1;
-      console.log("after decrease", decprodItem.quantity);
+
+      decprodItem.amount = decprodItem.quantity * decitem.price;
 
       const decnewState = decoldBasket.filter((i) => i.id !== decitem.id);
 
@@ -95,3 +75,22 @@ const reducer = (state, action) => {
   }
 };
 export default reducer;
+
+//  case "DECREASE":
+//  state.basket[state.basket.findIndex(item => item.id === action.item.id)].quantity--
+// // let indexdata=state.basket.findIndex(item => item.id === action.item.id)
+// // let identifydata=state.basket[indexdata]
+
+// state.basket[state.basket.findIndex(item => item.id === action.item.id)].quantity=-1
+
+// let data2 = data.quantity + 1
+
+// console.log("fdsfsd",state.basket[state.basket.findIndex(item => item.id === action.item.id)])
+// // console.log(indexdata)
+// // console.log(identifydata,"1")
+
+//  return {
+//      ...state,
+
+//      basket: [state.basket]
+//  }

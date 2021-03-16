@@ -1,5 +1,4 @@
 import React from "react";
-import Total from "../background/Total";
 
 import checkoutshopcss from "../components/checkoutshop.css";
 import Orderdetail from "../background/orderdetail.js";

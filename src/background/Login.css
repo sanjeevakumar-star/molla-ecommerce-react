@@ -1,15 +1,20 @@
+
 .logintitle{
- 
+    /* margin-top: 20px; */
     text-align: center;
-    margin-top: 10%;
-    color:rgb(194, 183, 31);
+   
+    color:rgb(24, 24, 22);
+   
+    height: 100px;
+    text-align: center;
 }
 .form{
     width: 350px;
     align-items: center;
     justify-content: center;
-    margin-left: 34%;
+    /* margin-left: 34%; */
     margin-top: 20px;
+    overflow: hidden;
 }
 .glefb{
     border-width: 0.01px;
@@ -20,4 +25,8 @@
     margin:30px;
     color: black;
 
+}
+.orderplaced{
+    margin-top: 400Px;
+    margin-bottom: 400px;
 }

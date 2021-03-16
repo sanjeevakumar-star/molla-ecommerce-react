@@ -14,18 +14,26 @@ function ReactTabs() {
     <div className="container">
       <div className="Listofproducts">
         <h1 className="product_list">List</h1>
-        <h6 className="product_lis">shop</h6>
+        <h6 className="product_list">shop</h6>
       </div>
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Nav className="flex-clumn ">
           <Nav.Item>
-            <Nav.Link to="/allproducts" eventKey="first" className="description">
-            All Products
+            <Nav.Link
+              to="/allproducts"
+              eventKey="first"
+              className="description"
+            >
+              All Products
             </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link to="/#furniture" eventKey="second" className="description">
+            <Nav.Link
+              to="/#furniture"
+              eventKey="second"
+              className="description"
+            >
               Funiture
             </Nav.Link>
           </Nav.Item>

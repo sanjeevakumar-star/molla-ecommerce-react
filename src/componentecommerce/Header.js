@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
@@ -8,30 +7,27 @@ import { BiLogIn } from "react-icons/bi";
 import { GrCart } from "react-icons/gr";
 
 import { BiSearch } from "react-icons/bi";
-import {
-  Navbar,
-  
-  Nav,
-  FormControl,
-  Form,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Nav, FormControl, Form, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../background/StateProvider";
 import css from "../componentecommerce/Header.css";
 
 function Header() {
   // const [count, setCount] = useState(0);
-  const [{ basket }, ] = useStateValue();
+  const [{ basket }] = useStateValue();
 
   return (
     <div className="container">
       <div className="dropdown">
         <Navbar bg="" expand="md">
-          <a className=" dropdown-toggle" href="/">USD </a>
+          <a className=" dropdown-toggle" href="/">
+            USD{" "}
+          </a>
 
-          <a className=" dropdown-toggle" href="/">ENG </a>
-           <Navbar.Toggle aria-controls="Link" >Links</Navbar.Toggle> 
+          <a className=" dropdown-toggle" href="/">
+            ENG{" "}
+          </a>
+          <Navbar.Toggle aria-controls="Link">Links</Navbar.Toggle>
           <Navbar.Collapse Link="Link">
             <Nav className="mr-auto">
               <Nav.Link className="call" href="#Call">
@@ -83,16 +79,18 @@ function Header() {
               <Nav.Link href="#Elements">Element</Nav.Link>
             </Nav>
             <Form inline>
+            <div className="image__overlay">
               <FormControl
                 type="text"
                 placeholder="Search"
                 className="mr-sm-2"
-              />
-
-              <Button variant="succes">
-                Search
-                <BiSearch />
-              </Button>
+              />  </div>
+            
+                <Button variant="suces">
+                  Search
+                  <BiSearch />
+                </Button>
+            
             </Form>
           </Navbar.Collapse>
 
